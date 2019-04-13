@@ -1,0 +1,53 @@
+#NEXUS 
+
+Begin trees;  [Treefile saved Tue Mar 26 16:58:28 2019]
+[!
+>Data file = /ufrc/bot6726/laurenwhitehurst/TauCeti/scoring_sheet.nex
+>Heuristic search settings:
+>  Optimality criterion = parsimony
+>    Character-status summary:
+>      Of 31 total characters:
+>        All characters are of type 'unord'
+>        All characters have equal weight
+>        4 characters are parsimony-uninformative
+>        Number of parsimony-informative characters = 27
+>    Gaps are treated as "missing"
+>  Starting tree(s) obtained via stepwise addition
+>  Addition sequence: random
+>    Number of replicates = 10
+>    Starting seed = 1681695895
+>  Number of trees held at each step during stepwise addition = 1
+>  Branch-swapping algorithm: tree-bisection-reconnection (TBR)
+>  Steepest descent option not in effect
+>  Initial 'MaxTrees' setting = 100
+>  Branches collapsed (creating polytomies) if maximum branch length is zero
+>  'MulTrees' option in effect
+>  Topological constraints not enforced
+>  Trees are unrooted
+>
+>Heuristic search completed
+>   Total number of rearrangements tried = 7532
+>   Score of best tree(s) found = 76
+>   Number of trees retained = 4
+>   Time used = <1 sec (CPU time = 0.00 sec)
+]
+	Translate
+		1 'R-08',
+		2 'S-04',
+		3 'S-14',
+		4 'S-27',
+		5 'S-31',
+		6 'S-43',
+		7 'S-56',
+		8 'S-64',
+		9 'S-72',
+		10 'S-77(1)',
+		11 'S-88',
+		12 'P-19',
+		13 'Q-44'
+		;
+tree PAUP_1 = [&U] (1,((((((((2,4),6),10),8),(7,11)),12),((3,5),9)),13));
+tree PAUP_2 = [&U] (1,((((((((2,4),6),10),8),(7,11)),((3,5),9)),12),13));
+tree PAUP_3 = [&U] (1,(((((((2,4),6),10),8),(7,11)),(((3,5),9),12)),13));
+tree PAUP_4 = [&U] (1,(((((2,4),6),10),(((((3,5),9),12),8),(7,11))),13));
+End;
